@@ -373,7 +373,7 @@ h1{
     left: -100%;
     z-index: 998;
     color: #333;
-    background: #fff;
+    background: #fffffff7;
     -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     width: 30%;
@@ -645,10 +645,12 @@ h1{
     content:"";
     display:block;
     border-bottom:1px dotted black;
-    position:relative; top:-3px;
+    position:relative;
+    top:-3px;
     flex:1 1 auto;
     margin:0 1rem;
     order:1;
+    display: none;
   }
   
   .menu-item a::after { /* item ids */
@@ -658,6 +660,7 @@ h1{
     order:2;
     transform:rotate(30deg)scale(1.2);
     text-decoration:underline;
+    display: none;
   }
   
   
@@ -694,9 +697,8 @@ h1{
     display:flex;
     flex-flow:column nowrap;
     position:relative;
-    background: #fff;
     padding: 0 20px;
-    right: 35px;
+    right: 20px;
   }
   
   .menu1::before {
@@ -734,8 +736,8 @@ h1{
   
   .menu-item:hover {
     transition:background-color 0.3s;
-    background: #fff;
     opacity:1 !important;
+    color: #4CAF50;
   }
   
   .menu-item:hover a::after {
@@ -762,6 +764,16 @@ h1{
     transform:scaleY(1);
   }
 
+  .sub-menu > li > a:hover{
+      text-decoration: underline;
+  }
+
+  .popup-form{display: flex;align-items: center;justify-content: flex-end;position: relative;left: 16px;}
+  .popup-form-input{display: flex;align-items: center;margin: 10px 0 10px 20px;}
+  .popup-form-input p{color: #333;margin-right: 11px;}
+
+  .popup-form-input input{border: 1px solid #ddd;padding: 5px;font-family: 'Josefin Sans', sans-serif;}
+  
   @media screen and (max-width: 1400px) {
     body{
         zoom: 0.9;
