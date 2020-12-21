@@ -834,6 +834,68 @@ h1 a{
     background-color: #f1f1f1;
   }
   
+  button a{
+      text-decoration: none;
+      color: #fff;
+  }
+
+  .search-btn-grp a {
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    background: #062838;
+    font-size: 16px;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #062838;
+    border-radius: inherit;
+    outline: none;
+    margin: 0 10px;
+    border-left: none;
+    border-right: none;
+    text-decoration: none;
+      color: #fff;
+}
+
+.user-table.position-table table th{
+    padding:15px 10px;
+}
+
+.user-table.position-table table td{
+    padding:15px 10px;
+}
+
+.header-btn{display: flex;align-items: center;justify-content: space-between;height: 50px;margin: 0 20px;position: relative;top: 10px;}
+
+.header-btn h5{color: #fff;font-weight: 300;font-size: 26px;}
+
+.header-btn a{
+    font-family: 'Josefin Sans', sans-serif;
+    border: none;
+    background: #4CAF50;
+    font-size: 16px;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #4CAF50;
+    border-radius: inherit;
+    outline: none;
+    margin: 0 10px;
+    border-left: none;
+    border-right: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-btn select{
+    border: 1px solid #668d9d;
+    padding: 14px;
+    width: 150px;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: none;
+    background: #fff;
+}
   ::-webkit-scrollbar {
     width: 7px;
     height: 7px;
