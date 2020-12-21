@@ -113,11 +113,18 @@
       </div>
     </div>
     <div class="container-wrapper">
-      <div class="search-box-container">
+      <div class="header-btn">
+        <h5>Add New</h5>
+        <select name="cars">
+          <option value="New">New</option>
+          <option value="Completed">Completed</option>
+          <option value="InProgress">In Progress</option>
+        </select>
+      </div>
+      <div class="search-box-container" style="height: calc(100% - 90px);">
         <div class="search-box">
           <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'General')" id="defaultOpen">General</button>
-            <button class="tablinks" onclick="openCity(event, 'Users')">Users</button>
             <button class="tablinks" onclick="openCity(event, 'Notification')">Notifications</button>
             <button class="tablinks" onclick="openCity(event, 'Comments')">Comments</button>
             <button class="tablinks" onclick="openCity(event, 'Documents')">Documents</button>
@@ -127,21 +134,23 @@
             <div class="search-box-form">
               <div class="search-box-input-form">
                 <div class="search-box-input">
-                  <p>Project Number</p>
-                  <input type="number" value="123456" />
+                  <p>Open</p>
+                  <input type="number" value="" />
                 </div>
                 <div class="search-box-input">
-                  <p>Project Name</p>
-                  <input type="text" value="oFlow" />
+                  <p>Role</p>
+                  <input type="text" value="" />
                 </div>
               </div>
-              <div class="search-box-input">
-                <p>Technologies</p>
-                <input type="text" value="Angular" />
-              </div>
-              <div class="search-box-input">
-                <p>Project Details</p>
-                <textarea>oFlow is a web application created internally and used exclusively within IFF.</textarea>
+              <div class="search-box-input-form">
+                <div class="search-box-input">
+                  <p>Skillset</p>
+                  <input type="number" value="" />
+                </div>
+                <div class="search-box-input">
+                  <p>For Project</p>
+                  <input type="text" value="" />
+                </div>
               </div>
               <div class="search-box-input-form">
                 <div class="search-box-input">
@@ -153,88 +162,22 @@
                   <input type="date" />
                 </div>
               </div>
+
               <div class="search-box-input-form">
                 <div class="search-box-input">
-                  <p>Challenges</p>
-                  <textarea></textarea>
+                  <p>New Resource</p>
+                  <input type="number" value="" />
                 </div>
                 <div class="search-box-input">
-                  <p>Solutions</p>
-                  <textarea></textarea>
+                  <p>Boarded On</p>
+                  <input type="text" value="" />
                 </div>
               </div>
+            
             </div>
           </div>
 
-          <div id="Users" class="tabcontent" style="padding: 20px 0 0 0;">
-            <div class="user-table">
-              <table cellpadding="0" cellspacing="0">
-                <thead>
-                  <tr>
-                    <th>User</th>
-                    <th>Role</th>
-                    <th>Exp.</th>
-                    <th>RCG</th>
-                    <th>Skillset</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Subramanian</td>
-                    <td>Scrum Master</td>
-                    <td class="text-right">14</td>
-                    <td>A</td>
-                    <td>Conflict Resolution, Agile Estimating and planning, Forecasting, Handling Impediments</td>
-                    <td>
-                      <p><span></span>Approved</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Mary Shaby</td>
-                    <td>Project Manager</td>
-                    <td class="text-right">12</td>
-                    <td>A</td>
-                    <td>Business Analysis, Data Analysis, Wireframing, Critical Thinking, Cost Managem</td>
-                    <td>
-                      <p><span></span>Approved</p>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>Gowtham</td>
-                    <td>Full Stack Engineer</td>
-                    <td class="text-right">8</td>
-                    <td>A</td>
-                    <td>HTML/CSS, JavaScript, Git, Git Hub, Python, Angular, Node, Web Architecture, Relatio</td>
-                    <td>
-                      <p><span></span>Approved</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Yuvaraj </td>
-                    <td>Full Stack Engineer</td>
-                    <td class="text-right">8</td>
-                    <td>A</td>
-                    <td>HTML/CSS, JavaScript, Git, Git Hub, Python, Angular, Node, Web Architecture, Relatio</td>
-                    <td>
-                      <p><span></span>Approved</p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Open Position </td>
-                    <td>MySQL Expert</td>
-                    <td class="text-right"></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                      <p><span class="open-status"></span>Open</p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+        
 
           <div id="Notification" class="tabcontent" style="padding:0;">
             <div class="tab-btn"><button>Add Notifications</button></div>
@@ -283,101 +226,27 @@
           </div>
         </div>
         <div class="search-result">
-          <h4>Projects & Resources</h4>
+          <h4>Open Position</h4>
           <div class="result-wrapper">
-            <div class="search-result-box">
-              <div class="search-result-list">
-                <p>123456</p>
-                <p><span>oFlow</span></p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 18 2020</p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 18 2021</p>
-              </div>
-              <div class="search-result-list">
-                <p>654321</p>
-                <p><span>4D NOW</span></p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 23 2020</p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 23 2021</p>
-              </div>
-              <div class="search-result-list">
-                <p>987654</p>
-                <p><span>FRMP</span></p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 11 2020</p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 29 2021</p>
-              </div>
-              <div class="search-result-list">
-                <p>123456</p>
-                <p><span>oFlow</span></p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 18 2020</p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 18 2021</p>
-              </div>
-              <div class="search-result-list">
-                <p>654321</p>
-                <p><span>4D NOW</span></p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 23 2020</p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 23 2021</p>
-              </div>
-              <div class="search-result-list">
-                <p>987654</p>
-                <p><span>FRMP</span></p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 11 2020</p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 29 2021</p>
-              </div>
-              <div class="search-result-list">
-                <p>123456</p>
-                <p><span>oFlow</span></p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 18 2020</p>
-                <p><span class="material-icons">
-                    date_range
-                  </span>Sep 18 2021</p>
-              </div>
-
-
-            </div>
-            <div class="resource-details">
+          
+            <div class="resource-details" style="width:100%">
               <div class="resource-list">
                 <table cellpadding="0" cellspacing="0">
                   <thead>
                     <tr>
                       <th></th>
+                      <th>OCT</th>
+                      <th>NAV</th>
                       <th>DEC</th>
                       <th>JAN</th>
                       <th>FEB</th>
                       <th>MAR</th>
-                      <th>APR</th>
-                      <th>MAY</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>
-                        <div class="resource-list-details"><span>Mary Shaby, Project Manager</span>12 Yrs., RCG - A,
-                          Business Analysis, Data Analysis, Wireframing.. </div>
+                        <div class="resource-list-details"><span>Big Data Analyst</span></div>
                       </td>
                       <td colspan="6">
                         <div class="progress">
@@ -387,8 +256,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <div class="resource-list-details"><span>Subramanian, Scrum Master</span>14 Yrs., RCG - A,
-                          Conflict Resolution, Agile Estimating and planning, Forecasting..
+                        <div class="resource-list-details"><span>Oracle DBA</span>
                         </div>
                       </td>
                       <td colspan="6">
@@ -399,8 +267,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <div class="resource-list-details"><span>Sham Kaja,UI/UX Designer</span>8 Yrs., RCG - A, UX
-                          Researching, Wireframing, Prototyping, Interaction Designing..
+                        <div class="resource-list-details"><span>Automation Quality Analyst</span>
                         </div>
                       </td>
                       <td colspan="6">
@@ -411,8 +278,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <div class="resource-list-details"><span>Yuvaraj R, Full Stack Engineer</span>8 Yrs., RCG - A,
-                          HTML/CSS, JavaScript, Git, Git Hub, Python, Angular, Node..
+                        <div class="resource-list-details"><span>MySQL Expert</span>
                         </div>
                       </td>
                       <td colspan="6">
@@ -421,39 +287,15 @@
                         </div>
                       </td>
                     </tr>
-                    <tr>
-                      <td>
-                        <div class="resource-list-details"><span>Gowtham Rajagopal, Full Stack Engineer</span>8 Yrs.,
-                          RCG - A, HTML/CSS, JavaScript, Git, Git Hub, Python, Angular..
-                        </div>
-                      </td>
-                      <td colspan="6">
-                        <div class="progress">
-                          <div class="progress-bar progress-view progress-bar-animated" style="width: 35%"></div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="resource-list-details"><span>Bhagyashree, Quality Analyst</span>8 Yrs., RCG - A,
-                          Manual Testing, Automation Testing, SQL, Ui Path RPA..
-                        </div>
-                      </td>
-                      <td colspan="6">
-                        <div class="progress">
-                          <div class="progress-bar progress-view progress-bar-animated" style="width: 55%"></div>
-                        </div>
-                      </td>
-                    </tr>
+                 
+                
 
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
-          <div class="search-btn-grp">
-            <a href="position.html" target="_blank">Open Position</a>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -570,33 +412,6 @@
   //# sourceURL=pen.js
   </script>
 
-  <script id="rendered-js">
-
-    var popup = document.querySelector('.progress-list-view');
-    var btn = document.querySelector('.progress-view');
-    var btn1 = document.querySelector('.progress-view1');
-    var btn2 = document.querySelector('.progress-view2');
-    var span = document.querySelector(".close");
-    btn.onclick = function () {
-      popup.classList.add('active');
-    }
-    btn1.onclick = function () {
-      popup.classList.add('active');
-    }
-    btn2.onclick = function () {
-      popup.classList.add('active');
-    }
-    span.onclick = function () {
-      popup.classList.remove('active');
-    }
-
-    window.onclick = function (event) {
-      if (event.target == popup) {
-        popup.classList.remove('active');
-      }
-    }
-  //# sourceURL=pen.js
-  </script>
 </body>
 
 </html>
